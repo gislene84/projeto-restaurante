@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><!--bloco de conteudo,cabeçalho do site-->
+        <nav><!--tag de navegação, tem um menu de navegação-->
+            <div class="container"><!--é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang.-->
+                <a href="index.html" class="logo"><!--tag de link-->
+                    <h1><!--tag de titulo-->Restaurante</h1>
+                </a>
+                <div class="menu"><!--divisão de layout-->
+                    <ul><!--lista não ordenada-->
+                        <li><!--item da lista-->
+                            <a href="sobre.html">SOBRE</a>
+                        </li>
+                    </ul>
+                </div><!--menu-->
+            </div><!--container-->
+        </nav>
+        <section class="hero"><!--nova seção-->
+            <div class="container">
+                <form id="formSearch"><!--tag de formulário.input pra pedir email, telefone--><!--id para o javascript-->
+                    <input type="search" placeholder="O QUE DESEJA COMER HOJE?" name="inputSearch" id="inputSearch"><!--é usado para criar controles interativos para formulários baseados na web para receber dados do usuário-->
+                </form>
+            </div><!--container-->
+        </section><!--hero-->
+    </header>
+    <main><!--tag principal do site-->
+        <div class="container">
+            <h3>Pratos</h3>
+            <section class="pratos">
+                <article class="prato"><!--tag de artigos-->
+                    <img src="img/prato1.jpg" alt="Prato 01">
+                    <h4>Prato 01</h4>
+                    <h4>R$ 10.00</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, at fugit! Eaque!</p>
+                    <button type="button"><!--tag de botão-->Quero este prato!</button>
+                </article><!--prato-->
+                <article class="prato"><!--tag de artigos-->
+                    <img src="img/prato2.jpg" alt="Prato 02">
+                    <h4>Prato 02</h4>
+                    <h4>R$ 15.00</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, at fugit! Eaque!</p>
+                    <button type="button"><!--tag de botão-->Quero este prato!</button>
+                </article><!--prato-->
+                <article class="prato"><!--tag de artigos-->
+                    <img src="img/prato3.jpg" alt="Prato 03">
+                    <h4>Prato 03</h4>
+                    <h4>R$ 20.00</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, at fugit! Eaque!</p>
+                    <button type="button"><!--tag de botão-->Quero este prato!</button>
+                </article><!--prato-->
+                <article class="prato"><!--tag de artigos-->
+                    <img src="img/prato4.jpg" alt="Prato 04">
+                    <h4>Prato 04</h4>
+                    <h4>R$ 25.00</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, at fugit! Eaque!</p>
+                    <button type="button"><!--tag de botão-->Quero este prato!</button>
+                </article><!--prato-->
+            </section><!--pratos-->
+        </div><!--container-->
+    </main>
+    <footer><!--tag de rodapé do site-->
+        <div class="container">
+            <p>Desenvolvido com amor por Gislene Oliveira</p>
+        </div><!--container-->
+    </footer>
+</body>
+</html>
