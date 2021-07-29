@@ -1,0 +1,145 @@
+*{
+    margin: 0;/*espaçamento na largura do lado de fora do elementos*/
+    padding: 0;/*espaçamento na altura do lado de dentro dos elementos*/
+    box-sizing: border-box;/*os valores do padding não vai influenciar no tamanho do elemneto*/
+}
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;/*é usada para indicar o tamanho da letra(fonte) em CSS*, quando o tamnho da tela a fonte vai se adaptar*/
+    color: #000;/*cor da fonte*/
+    background-color: #f5f5f5;/*cor do fundo*/
+}
+header nav{
+    background-color: #000;/*cor do fundo*/
+    padding: 10px 0;/*espaçamento na altura do lado de dentro dos elementos*/
+}
+header nav .logo{
+    color: white;/*cor da fonte*/
+    text-decoration: none;/*remover o sublinhado da palavra*/
+}
+header nav .container{
+    display: flex;/*alinhar um item na ponta esquerda e outro na direita*/
+    align-items: center;/*centarlizar o elemento*/
+    justify-content: space-between;/* Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início e o último no final*/
+
+}
+header nav .menu ul li a{
+    color: white;/*cor da fonte*/
+    text-decoration: none;/*remover o sublinhado da palavra*/
+    font-weight: bold;/*destacar um trecho de um texto, NEGRITO*/
+    font-size: 1.2rem;/*é usada para indicar o tamanho da letra(fonte) em CSS*, quando o tamnho da tela a fonte vai se adaptar*/
+}
+header .hero{
+    background-image: url('../img/logo.jpg');/*colocar imagem ao fundo do elemento*/
+    background-size: cover;/*A imagem é renderizada, preservando sua proporção intrínseca, com o maior tamanho contido, ou cobrindo a área do elemento pai. Se a imagem não tiver uma proporção intrínseca, então ela é renderizada no tamanho da área do elemento pai*/
+    background-repeat: no-repeat;/*a imagem não será repetida*/
+    background-position: center;/*a imagem será centralizada*/
+    height: 300px;/*altura da imagem*/
+    display: flex;/*alinhar um item na ponta esquerda e outro na direita*/
+    justify-content: center;/* Alinha os itens ao centro do container.*/
+    align-items: center;/*centarlizar o elemento*/
+}
+header .hero #formSearch/*id*/{
+    display: flex;/*alinhar um item na ponta esquerda e outro na direita*/
+    justify-content: center;/* Alinha os itens ao centro do container.*/
+    align-items: center;/*centarlizar o elemento*/
+}
+header .hero #formSearch input{
+    width: 70vw;/*largura, vw unidade relativa. Largura da view*/
+    padding: 10px;/*espaçamento na altura do lado de dentro dos elementos*/
+    border-radius: 5px;/*permite definir como bordas arredondadas são*/
+    border: 1px solid rgba(0, 0, 0, .3);
+    text-align: center;/*centralizar o texto*/
+}
+main{
+    margin: 20px /*em cima e embaixo*/ 0px/*nas laterais*/;
+}
+main .container .pratos{
+    display: flex;/*alinhar os elementos lado a lado*/
+    flex-direction: column;/*Os itens ficam em uma única coluna, um embaixo do outro.*/
+}
+main .container h3{
+    font-size: 2rem;/*tamanho da fonte*/
+    margin-bottom: 20px;/*define a margin area na parte inferior de um elemento*/
+}
+.prato{
+    background-color: white;/*cor do fundo*/
+    margin-bottom: 20px;/*define a margin area na parte inferior de um elemento*/
+    display: flex;/*alinhar um item na ponta esquerda e outro na direita*/
+    /*flex-direction: column;/*Os itens ficam em uma única coluna, um embaixo do outro.*/
+    border-radius: 5px;/*permite definir como bordas arredondadas são*/
+    box-shadow: 1px /*altura*/ 1px /*lado*/ 3px /*espaçamento*/ rgba(0, 0, 0, .3);/*é utilizado para adicionar efeitos de sombra em volta de um elemento*/
+}
+.prato img{
+    border-radius: 5px 5px 0px 0px;/*permite definir como bordas arredondadas são*/
+    margin-bottom: 10px;/*define a margin area na parte inferior de um elemento*/ 
+}
+.prato h4{
+    padding: 0px /*em cima/embaixo*/ 20px /*nas laterais*/;/*espaçamento na altura do lado de dentro dos elementos*/
+    text-align: center;/*centralizar o texto*/
+    font-size: 1.2rem;/*tamanho da fonte*/
+    margin-bottom: 5px;/*define a margin area na parte inferior de um elemento*/    
+}
+.prato p{
+    padding: 0px /*em cima/embaixo*/ 20px /*nas laterais*/;/*espaçamento na altura do lado de dentro dos elementos*/
+    font-size: 1rem;/*tamanho da fonte*/
+}
+.prato button{
+    width: 50%;/*largura,Largura da view*/
+    margin: 20px /*em cima/embaixo*/ auto /*centralizar*/;
+    padding: 10px;/*espaçamento na altura do lado de dentro dos elementos*/
+    font-weight: bold;/*destacar um trecho de um texto, NEGRITO*/
+    border-radius: 5px;/*permite definir como bordas arredondadas são*/
+    border: 1px solid rgba(0, 0, 0, .3);
+    text-transform: uppercase;/*Causa o efeito de transformar as primeiras letras das palavras do texto em maiúscula*/
+    background-color: #000;/*cor do fundo*/
+    color: #fff;/*cor da fonte*/
+    cursor: pointer;/*especifica o cursor do mouse mostrado quando o ponteiro*/
+    box-shadow: 1px /*altura*/ 1px /*lado*/ 3px /*espaçamento*/ rgba(0, 0, 0, .3);/*é utilizado para adicionar efeitos de sombra em volta de um elemento*/
+    transition: 0,3s ease;/* permite definir a transição entre dois estados de um elemento*/
+}
+.prato button:hover{/*efeito para mudar a cor de fundo quando passar o mouse*/
+    background-color: #dedede;/*cor do fundo*/
+    color: #000;/*cor da fonte*/
+}
+.prato:hover{/*efeito para mudar a cor de fundo quando passar o mouse*/
+    background-color: #f5f5f5;/*cor do fundo*/
+    transition: 0,3s ease;/* permite definir a transição entre dois estados de um elemento*/
+}
+footer .container p{
+    text-align: center;/*centralizar o texto*/
+}
+footer {
+    padding: 10px /*laterais*/ 0px /*cima/baixo*/;
+    font-weight: bold;/*destacar um trecho de um texto, NEGRITO*/
+}
+.hero-sobre{
+    height: 300px;/*altura da imagem*/
+    background-color: #111;/*cor do fundo*/
+    color: #fff;/*cor da fonte*/
+    display: flex;/*alinhar um item na ponta esquerda e outro na direita*/
+    justify-content: center;/* Alinha os itens ao centro do container.*/
+    align-items: center;/*centarlizar o elemento*/
+}
+.hero-sobre .container{
+    display: flex;/*alinhar um item na ponta esquerda e outro na direita*/
+    justify-content: center;/* Alinha os itens ao centro do container.*/
+    align-items: center;/*centarlizar o elemento*/
+}
+@media (min-width: 600px) {
+    main .container .pratos{
+        flex-direction: row;/*Os itens ficam em linha*/
+        justify-content: space-around;/*Cria um espaçamento entre os elementos. Os espaçamentos do meio são duas vezes maiores que o inicial e final.*/
+        flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+    }
+    main .container .pratos .prato{
+        width: 300px;/*largura,Largura da view*/
+    }
+}
+
+/*container*/
+.container{
+    width: 90vw;/*largura, vw unidade relativa. Largura da view*/
+    margin: 0px auto; /*0px tanto pra cima quanto pra baixo, auto centralizar a div(o conteudo)*/
+}
+ 
